@@ -1,0 +1,12 @@
+<div class="w-50 border border-secondary bg-secondary p-3 " style="margin: 20px auto;border-radius: 10px;" >
+  <h3 class="display-5 p-3 mb-2 bg-secondary text-white">
+    Project : <%= project.name %>
+  </h3>
+  <h4 class="display-6 p-3 mb-2 bg-secondary text-dark">
+    Author : <%= project.author %>
+  </h4>
+  <h5 class="display-6 p-3 mb-2 bg-secondary text-dark">
+    Description : <%= project.description %>
+  </h5>
+</div>
+<%-include('./partials/_issues'); %>

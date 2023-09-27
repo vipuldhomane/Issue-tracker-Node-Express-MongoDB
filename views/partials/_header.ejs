@@ -1,1 +1,15 @@
-<h1>Header</h1>
+<nav class="navbar navbar-expand-sm" style="background-color: rgb(62, 59, 59)">
+  <div class="container-fluid">
+    <!-- Brand logo with a link to the homepage -->
+    <a
+      class="navbar-brand ms-4"
+      href="/"
+      style="font-weight: bolder; color: whitesmoke"
+      >Issue Tracker</a
+    >
+
+    <!-- Conditional inclusion of different forms based on the value of the "title" variable -->
+    <% if( title === "Project Page"){ %> <%- include('_issue_form'); %> <%}
+    else{ %> <%- include('_project_form'); %> <% } %>
+  </div>
+</nav>
