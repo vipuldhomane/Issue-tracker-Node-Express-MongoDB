@@ -7,7 +7,7 @@ module.exports.home = async function (req, res) {
       projects,
     });
   } catch {
-    console.log("Error", err);
+    // console.log("Error", err);
     return;
   }
 };
